@@ -1,8 +1,8 @@
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
+//const http = require('http');
+//const fs = require('fs');
+//const path = require('path');
 const queryString = require('querystring');
-var server = http.createServer();
+//var server = http.createServer();
 const jwt = require('jsonwebtoken');
 
 const crypto = require('crypto');
@@ -12,7 +12,7 @@ var sessions = [];
 
 var server = http.createServer();
 
-server.on('request', (req,res)=>{
+/*server.on('request', (req,res)=>{
 
     if(req.url =='/')  req.url += 'trangchu.html';
 
@@ -27,7 +27,7 @@ server.on('request', (req,res)=>{
         res.writeHead(404);
         res.end('File not found')
     });
-
+*/
     
 
     /*var url = req.url;
@@ -107,9 +107,9 @@ server.on('request', (req,res)=>{
     }
 
 }*/
-);
-server.listen(4000);
-console.log('ok nhung');
+//);
+//server.listen(4000);
+//console.log('ok nhung');
 
 
 // function uuid()
